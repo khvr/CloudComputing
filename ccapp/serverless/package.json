@@ -1,0 +1,24 @@
+{
+  "name": "csye6225-fa19-lambda",
+  "version": "1.0.0",
+  "description": "## Team Information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khvr/csye6225-fa19-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khvr/csye6225-fa19-lambda/issues"
+  },
+  "homepage": "https://github.com/khvr/csye6225-fa19-lambda#readme",
+  "dependencies": {
+    "aws-sdk": "^2.572.0",
+    "pg": "^7.12.1",
+    "uuid": "^3.3.3"
+  }
+}

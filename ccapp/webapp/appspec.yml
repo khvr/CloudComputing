@@ -1,0 +1,26 @@
+version: 0.0
+os: linux
+
+files:             
+  - source: ./backend_app
+    destination: /home/centos/csye6225/dev/webapp/
+  - source: ./cloudwatch-config.json
+    destination: /home/centos/csye6225/dev/webapp/
+
+hooks:
+  ApplicationStop:
+   - location: ./applicationStop.sh
+     timeout: 180
+     runas: centos
+  BeforeInstall:
+    - location: ./beforeInstall.sh
+      timeout: 300
+      runas: centos    
+  AfterInstall:
+   - location: ./afterInstall.sh
+     timeout: 180
+     runas: centos
+  ApplicationStart:
+    - location: ./applicationStart.sh
+      timeout: 100
+      runas: centos
